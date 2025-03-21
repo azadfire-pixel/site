@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ziraat Bankası Pro</title>
+  <style>
+    /* Genel Sıfırlama */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #e60000;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img.logo {
+      height: 50px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background: url('https://via.placeholder.com/1200x400?text=Ziraat+Bankası+Banner') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    section {
+      background-color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-bottom: 15px;
+      color: #e60000;
+    }
+    .account-summary .account-details {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .account-details div {
+      flex: 1;
+      margin: 10px;
+      min-width: 200px;
+    }
+    .transfer form {
+      display: flex;
+      flex-direction: column;
+    }
+    .transfer form label {
+      margin: 10px 0 5px;
+    }
+    .transfer form input,
+    .transfer form button {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    .transfer form input {
+      margin-bottom: 15px;
+    }
+    .transfer form button {
+      background-color: #e60000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.gif" alt="Ziraat Bankası Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="bankahesap.html">Banka Hesabı</a></li>
+        <li><a href="borsa.html">Borsa Bilgileri</a></li>
+        <li><a href="hisse.html">Hisse Kodları</a></li> <li><a href="kripto.html">Kripto Hesabı</a></li>
+        <li><a href="banka.html">Ziraat Bankası</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+ 
+  
+  <div class="container">
+    <section class="account-summary">
+      <h2>Hesap Özeti</h2>
+      <div class="account-details">
+        <div>
+          <strong>Hesap Sahibi:</strong>
+          <p>Jaza D Fire</p>
+        </div>
+        <div>
+          <strong>Hesap Numarası:</strong>
+          <p>1234 5678 9012 3456</p>
+        </div>
+        <div>
+          <strong>Mevcut Bakiye:</strong>
+          <p>208.540.467,89 TL</p>
+        </div>
+        <div>
+          <strong>IBAN:</strong>
+          <p>TR12 3456 7890 1234 5678 9012 34</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="transfer">
+      <h2>Para Transferi</h2>
+      <form>
+        <label for="transfer-to">Transfer Yapılacak Hesap (IBAN):</label>
+        <input type="text" id="transfer-to" name="transfer-to" placeholder="Alıcı IBAN">
+        
+        <label for="amount">Tutar (USD):</label>
+        <input type="number" id="amount" name="amount" placeholder="Transfer Tutarı">
+        
+        <label for="description">Açıklama:</label>
+        <input type="text" id="description" name="description" placeholder="Transfer Açıklaması">
+        
+        <button type="submit">Transferi Gerçekleştir</button>
+      </form>
+    </section>
+    
+    <section class="iban-info">
+      <h2>Hesap Bilgileri</h2>
+      <p><strong>IBAN:</strong> TR12 3456 7890 1234 5678 9012 34</p>
+      <p><strong>Şube Kodu:</strong> 0001</p>
+      <p><strong>Swift Kodu:</strong> ZIRAATXX</p>
+    </section>
+  </div>
+  
+  <footer>
+    &copy; 2025 Ziraat Bankası. Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
